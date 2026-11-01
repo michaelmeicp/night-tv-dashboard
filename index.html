@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#020304">
-<meta name="data-app-snapshot-sha256" content="4d0f7bc5ff50be403c6903f7b54066af606efd71871427160e3041c71209bcf6">
+<meta name="data-app-snapshot-sha256" content="a0f9f9c1a329501e269c6422b3641d98a40d1ae8e392cec08585f65ac1600db3">
 <meta name="data-app-runtime-sha256" content="9e3ede84b28aded3c7379b6e6a5611f0d95b9977eb0f781e279ceefabfcbd27e">
 <meta name="data-app-bootstrap" content="deferred-content-v1">
 
@@ -105,6 +105,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
 .nd-trend .recharts-cartesian-axis,.nd-trend .recharts-cartesian-grid{display:none}.sleep-desk .nd-footer{font-size:.52em;line-height:1.3}.nd-refresh-status{display:block;color:#536b55}
 
 .source-sidebar{--background:#050705;--surface:#080c09;--surface-raised:#101810;--text:#798571;--secondary:#596652;--border:#1a291c;background:#050705!important;filter:brightness(.75)}
+
+.nd-price-detail{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:2.5em}.nd-refresh-status button{font:inherit;padding:0 .3em;border-color:#1a291c;color:#536b55;background:#070c08}.nd-refresh-status button:disabled{opacity:.7}
 </style>
 </head>
 <body>
@@ -112,7 +114,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
 <script type="application/json" id="data-app-reviewed-snapshot">{
   "surface": "dashboard",
   "title": "澳門夜間看板",
-  "generatedAt": "2026-10-30T19:55:45Z",
+  "generatedAt": "2026-11-01T01:58:52Z",
   "status": "reviewed",
   "buildStatus": "complete",
   "filters": [],
@@ -122,44 +124,48 @@ html,body,#root,.dashboard-root{background:#020304!important}
         {
           "id": "btc",
           "label": "Bitcoin · BTC",
-          "value": 76699,
+          "value": 77597,
           "unit": "USD/BTC",
-          "quote_timestamp": "2026-10-30T19:54:12Z",
+          "quote_timestamp": "2026-11-01T01:58:37Z",
           "quote_timezone": "UTC",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:50Z",
           "source_url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,binancecoin&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true",
           "status": "snapshot",
           "is_live": false,
-          "change_24h_percent": -5.093920006312317,
+          "change_24h_percent": 0.38559978973184766,
           "warning": null,
-          "detail": "10/31 03:54 快照 · 24h -5.09%",
-          "display": "76,699.00",
-          "source_quote_time": "2026-10-30T19:54:12Z",
+          "detail": "11/01 09:58 報價 · 24h +0.39%",
+          "display": "77,597.00",
+          "source_quote_time": "2026-11-01T01:58:37Z",
           "price_type": "aggregated spot USD price",
           "reason": null,
           "source": "CoinGecko",
-          "quote_timestamp_precision": "timestamp"
+          "quote_timestamp_precision": "timestamp",
+          "refresh_key": "crypto_quotes",
+          "stale_after_seconds": 1800
         },
         {
           "id": "bnb",
           "label": "BNB",
-          "value": 699.5,
+          "value": 702.6,
           "unit": "USD/BNB",
-          "quote_timestamp": "2026-10-30T19:54:24Z",
+          "quote_timestamp": "2026-11-01T01:58:37Z",
           "quote_timezone": "UTC",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:50Z",
           "source_url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,binancecoin&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true",
           "status": "snapshot",
           "is_live": false,
-          "change_24h_percent": -6.0307182510715025,
-          "detail": "10/31 03:54 快照 · 24h -6.03%",
-          "display": "699.50",
-          "source_quote_time": "2026-10-30T19:54:24Z",
+          "change_24h_percent": -0.5168716382876078,
+          "detail": "11/01 09:58 報價 · 24h -0.52%",
+          "display": "702.60",
+          "source_quote_time": "2026-11-01T01:58:37Z",
           "price_type": "aggregated spot USD price",
           "reason": null,
           "warning": null,
           "source": "CoinGecko",
-          "quote_timestamp_precision": "timestamp"
+          "quote_timestamp_precision": "timestamp",
+          "refresh_key": "crypto_quotes",
+          "stale_after_seconds": 1800
         },
         {
           "id": "hsi",
@@ -254,8 +260,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "unit": "HKD/USD",
           "quote_timestamp": "2026-10-30",
           "quote_timezone": "published date",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
           "status": "snapshot",
           "is_live": false,
           "warning": null,
@@ -265,7 +271,9 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "price_type": "daily reference exchange rate",
           "reason": null,
           "source": "Frankfurter",
-          "quote_timestamp_precision": "date"
+          "quote_timestamp_precision": "date",
+          "refresh_key": "history_usd_hkd",
+          "stale_after_seconds": 345600
         },
         {
           "id": "usd_mop",
@@ -274,8 +282,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "unit": "MOP/USD",
           "quote_timestamp": "2026-10-30",
           "quote_timezone": "published date",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
           "status": "snapshot",
           "is_live": false,
           "warning": null,
@@ -285,7 +293,9 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "price_type": "daily reference exchange rate",
           "reason": null,
           "source": "Frankfurter / AMCM",
-          "quote_timestamp_precision": "date"
+          "quote_timestamp_precision": "date",
+          "refresh_key": "history_usd_mop",
+          "stale_after_seconds": 345600
         },
         {
           "id": "macau_petrol",
@@ -332,11 +342,11 @@ html,body,#root,.dashboard-root{background:#020304!important}
       ],
       "source": {
         "label": "公開報價與歷史來源",
-        "executedAt": "2026-10-30T19:55:45Z",
+        "executedAt": "2026-11-01T01:58:51Z",
         "notes": [
-          "報價時刻與日收市／日參考序列分開標示；未核實資料維持空缺。",
-          "股票價格變動不含股息，基金為指定累積類別NAV。",
-          "本頁為本次已核實資料快照，不自動更新；重新載入仍顯示相同資料。"
+          "每列 quote_timestamp 為來源報價時間；fetch_timestamp 僅為成功擷取時間，失敗時不改寫。",
+          "加密貨幣、匯率與天氣可透過本專案一次性更新工具重建；股票、基金、原油與油價保留原快照或缺口。",
+          "沒有自動排程或瀏覽器即時行情；每日匯率非即時買賣價。股票變動不含股息。"
         ],
         "evidenceFlow": [
           {
@@ -513,9 +523,9 @@ html,body,#root,.dashboard-root{background:#020304!important}
         "label": "公開報價與歷史來源",
         "executedAt": "2026-10-30T19:55:45Z",
         "notes": [
-          "報價時刻與日收市／日參考序列分開標示；未核實資料維持空缺。",
-          "股票價格變動不含股息，基金為指定累積類別NAV。",
-          "本頁為本次已核實資料快照，不自動更新；重新載入仍顯示相同資料。"
+          "每列 quote_timestamp 為來源報價時間；fetch_timestamp 僅為成功擷取時間，失敗時不改寫。",
+          "加密貨幣、匯率與天氣可透過本專案一次性更新工具重建；股票、基金、原油與油價保留原快照或缺口。",
+          "沒有自動排程或瀏覽器即時行情；每日匯率非即時買賣價。股票變動不含股息。"
         ],
         "evidenceFlow": [
           {
@@ -535,57 +545,87 @@ html,body,#root,.dashboard-root{background:#020304!important}
       "rows": [
         {
           "id": "macau_temperature",
-          "label": "澳門氣溫｜官方舊觀測快照",
-          "value": 25,
+          "label": "澳門氣溫｜官方整點觀測",
+          "value": 27,
           "unit": "°C",
-          "quote_timestamp": "2026-10-30T21:00:00+08:00",
+          "humidity_percent": 77,
+          "quote_timestamp": "2026-11-01T10:00:00+08:00",
           "quote_timezone": "Asia/Macau",
-          "fetch_timestamp": "2026-10-30T19:14:18Z",
-          "source_url": "https://www.macaotourism.gov.mo/zh-hant/weather",
+          "published_at": "2026-11-01T09:54:00+08:00",
+          "fetch_timestamp": "2026-11-01T01:58:52Z",
+          "source_url": "https://xml.smg.gov.mo/c_actual_brief.xml",
+          "source": "澳門地球物理氣象局（SMG）",
           "status": "snapshot",
           "is_live": false,
-          "humidity_percent": 84,
-          "warning": "資料已逾6小時，並非此刻觀測",
-          "source": "澳門旅遊局，資料提供：地球物理暨氣象局",
-          "detail": "10/31 預報 24–29°C · 天晴間中多雲",
-          "asof": "觀測：10/30 21:00 · 非此刻溫度"
+          "warning": "官方整點觀測，非連續即時讀數",
+          "summary": "間晴",
+          "asof": "觀測：11/01 10:00 澳門",
+          "wind_kmh": 16,
+          "detail": "今日預報 25–30°C",
+          "refresh_key": "weather",
+          "stale_after_seconds": 7200
         },
         {
           "id": "macau_forecast",
-          "label": "澳門10月31日預報",
+          "label": "澳門11月01日預報",
           "value": {
-            "low": 24,
-            "high": 29
+            "low": 25,
+            "high": 30
           },
           "unit": "°C",
-          "quote_timestamp": null,
+          "quote_timestamp": "2026-11-01T09:00:00+08:00",
+          "quote_timestamp_note": "quote_timestamp為官方發布時間，valid_date為預報適用日期",
           "quote_timezone": "Asia/Macau",
-          "fetch_timestamp": "2026-10-30T19:14:18Z",
-          "source_url": "https://www.macaotourism.gov.mo/zh-hant/weather",
+          "published_at": "2026-11-01T09:00:00+08:00",
+          "fetch_timestamp": "2026-11-01T01:58:52Z",
+          "source_url": "https://xml.smg.gov.mo/c_forecast.xml",
+          "source": "澳門地球物理氣象局（SMG）",
           "status": "forecast",
           "is_live": false,
-          "valid_date": "2026-10-31",
-          "summary": "天晴，部份時間多雲；偏東風3至4級，間中5級及有陣風。",
-          "quote_timestamp_note": "預報發布時刻未獨立標示，頁面觀測更新為10月30日21:00"
+          "valid_date": "2026-11-01",
+          "summary": "多雲，部份時間有陽光。\n有幾陣微雨。\n吹3至4級偏東風。\n氣溫約為攝氏25至30度。\n相對濕度介乎百分之65至90之間。\n預測最高紫外線指數約為 8，級別屬於甚高。",
+          "refresh_key": "weather"
+        },
+        {
+          "id": "macau_forecast_2026-11-02",
+          "label": "澳門11月02日預報",
+          "value": {
+            "low": 25,
+            "high": 30
+          },
+          "unit": "°C",
+          "quote_timestamp": "2026-11-01T09:00:00+08:00",
+          "quote_timestamp_note": "quote_timestamp為官方發布時間，valid_date為預報適用日期",
+          "quote_timezone": "Asia/Macau",
+          "published_at": "2026-11-01T09:00:00+08:00",
+          "fetch_timestamp": "2026-11-01T01:58:52Z",
+          "source_url": "https://xml.smg.gov.mo/c_forecast.xml",
+          "source": "澳門地球物理氣象局（SMG）",
+          "status": "forecast",
+          "is_live": false,
+          "valid_date": "2026-11-02",
+          "summary": "多雲，部份時間有陽光。\n初時有微雨。\n吹2至3級偏東風。\n氣溫約為攝氏25至30度。\n相對濕度介乎百分之65至95之間。",
+          "refresh_key": "weather"
         }
       ],
       "source": {
-        "label": "澳門旅遊局／氣象局",
-        "executedAt": "2026-10-30T19:14:18Z",
+        "label": "澳門地球物理氣象局（SMG）",
+        "executedAt": "2026-11-01T01:58:52Z",
         "notes": [
-          "較舊觀測與指定日期預報，非此刻氣溫。"
+          "官方整點觀測與逐日預報分開標時；擷取時間不代表觀測時間。",
+          "公開資料目錄：https://data.gov.mo/Detail?id=070f7d9b-f734-4269-841c-0859912a5b15"
         ],
         "evidenceFlow": [
           {
-            "title": "公開來源",
-            "detail": "各列 source_url 為已查公開來源；quote_timestamp 為資料時間，fetch_timestamp 為擷取時間。瀏覽器不自動更新。"
+            "title": "官方公開XML",
+            "detail": "Type=3為即時錄得觀測；ValidFor為觀測時刻／預報適用日，SysPubdate為發布時間。"
           }
         ]
       },
       "methods": [
         {
           "language": "text",
-          "code": "僅保留公開商品／天氣／新聞欄位；保留缺值。展示價格按幣種四位或兩位小數，沒有推算缺少報價。"
+          "code": "一次擷取SMG公開XML，驗證數值、單位、時刻及適用日期；不推算缺值，不重標舊預報日期。"
         }
       ]
     },
@@ -2755,34 +2795,12 @@ html,body,#root,.dashboard-root{background:#020304!important}
     "history_btc": {
       "rows": [
         {
-          "date": "2026-10-01T00:00:00Z",
-          "value": 83576.13460018387,
-          "instrument_id": "btc",
-          "currency": "USD",
-          "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
-          "source_note": null,
-          "includes_dividends": null
-        },
-        {
-          "date": "2026-10-02T00:00:00Z",
-          "value": 84841.66634358242,
-          "instrument_id": "btc",
-          "currency": "USD",
-          "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
-          "source_note": null,
-          "includes_dividends": null
-        },
-        {
           "date": "2026-10-03T00:00:00Z",
           "value": 84506.46895963937,
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2793,7 +2811,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2804,7 +2822,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2815,7 +2833,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2826,7 +2844,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2837,7 +2855,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2848,7 +2866,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2859,7 +2877,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2870,7 +2888,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2881,7 +2899,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2892,7 +2910,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2903,7 +2921,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2914,7 +2932,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2925,7 +2943,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2936,7 +2954,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2947,7 +2965,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2958,7 +2976,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2969,7 +2987,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2980,7 +2998,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -2991,7 +3009,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3002,7 +3020,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3013,7 +3031,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3024,7 +3042,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3035,7 +3053,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3046,7 +3064,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3057,7 +3075,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3068,7 +3086,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3079,18 +3097,40 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
         },
         {
-          "date": "2026-10-30T19:52:30Z",
-          "value": 76692.40385403017,
+          "date": "2026-10-31T00:00:00Z",
+          "value": 77223.17102624816,
           "instrument_id": "btc",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
+          "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
+          "source_note": null,
+          "includes_dividends": null
+        },
+        {
+          "date": "2026-11-01T00:00:00Z",
+          "value": 77474.07610954811,
+          "instrument_id": "btc",
+          "currency": "USD",
+          "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
+          "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
+          "source_note": null,
+          "includes_dividends": null
+        },
+        {
+          "date": "2026-11-01T01:57:30Z",
+          "value": 77596.98591662967,
+          "instrument_id": "btc",
+          "currency": "USD",
+          "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3098,10 +3138,10 @@ html,body,#root,.dashboard-root{background:#020304!important}
       ],
       "source": {
         "label": "Bitcoin · BTC 歷史資料",
-        "executedAt": "2026-10-30T19:55:24Z",
+        "executedAt": "2026-11-01T01:58:51Z",
         "notes": [
           "aggregated spot USD price; daily UTC samples, not exchange closing prices",
-          "真實觀測，未補週末與假日。"
+          "真實日期與觀測值，未補週末或缺值。"
         ],
         "evidenceFlow": [
           {
@@ -3114,34 +3154,12 @@ html,body,#root,.dashboard-root{background:#020304!important}
     "history_bnb": {
       "rows": [
         {
-          "date": "2026-10-01T00:00:00Z",
-          "value": 768.7995283066532,
-          "instrument_id": "bnb",
-          "currency": "USD",
-          "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
-          "source_note": null,
-          "includes_dividends": null
-        },
-        {
-          "date": "2026-10-02T00:00:00Z",
-          "value": 771.4235628245503,
-          "instrument_id": "bnb",
-          "currency": "USD",
-          "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
-          "source_note": null,
-          "includes_dividends": null
-        },
-        {
           "date": "2026-10-03T00:00:00Z",
           "value": 768.039998749011,
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3152,7 +3170,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3163,7 +3181,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3174,7 +3192,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3185,7 +3203,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3196,7 +3214,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3207,7 +3225,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3218,7 +3236,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3229,7 +3247,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3240,7 +3258,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3251,7 +3269,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3262,7 +3280,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3273,7 +3291,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3284,7 +3302,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3295,7 +3313,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3306,7 +3324,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3317,7 +3335,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3328,7 +3346,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3339,7 +3357,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3350,7 +3368,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3361,7 +3379,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3372,7 +3390,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3383,7 +3401,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3394,7 +3412,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3405,7 +3423,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3416,7 +3434,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3427,7 +3445,7 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3438,18 +3456,40 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
         },
         {
-          "date": "2026-10-30T19:53:00Z",
-          "value": 699.4306159656047,
+          "date": "2026-10-31T00:00:00Z",
+          "value": 703.551668506695,
           "instrument_id": "bnb",
           "currency": "USD",
           "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
+          "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
+          "source_note": null,
+          "includes_dividends": null
+        },
+        {
+          "date": "2026-11-01T00:00:00Z",
+          "value": 703.1081445272832,
+          "instrument_id": "bnb",
+          "currency": "USD",
+          "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
+          "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
+          "source_note": null,
+          "includes_dividends": null
+        },
+        {
+          "date": "2026-11-01T01:57:30Z",
+          "value": 702.605534950381,
+          "instrument_id": "bnb",
+          "currency": "USD",
+          "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
           "source_note": null,
           "includes_dividends": null
@@ -3457,10 +3497,10 @@ html,body,#root,.dashboard-root{background:#020304!important}
       ],
       "source": {
         "label": "BNB 歷史資料",
-        "executedAt": "2026-10-30T19:55:24Z",
+        "executedAt": "2026-11-01T01:58:51Z",
         "notes": [
           "aggregated spot USD price; daily UTC samples, not exchange closing prices",
-          "真實觀測，未補週末與假日。"
+          "真實日期與觀測值，未補週末或缺值。"
         ],
         "evidenceFlow": [
           {
@@ -3473,34 +3513,12 @@ html,body,#root,.dashboard-root{background:#020304!important}
     "history_usd_hkd": {
       "rows": [
         {
-          "date": "2026-09-30",
-          "value": 7.8463,
-          "instrument_id": "usd_hkd",
-          "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "price_type": "daily reference exchange rate; not live spot",
-          "source_note": null,
-          "includes_dividends": null
-        },
-        {
-          "date": "2026-10-01",
-          "value": 7.8472,
-          "instrument_id": "usd_hkd",
-          "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "price_type": "daily reference exchange rate; not live spot",
-          "source_note": null,
-          "includes_dividends": null
-        },
-        {
           "date": "2026-10-02",
           "value": 7.8471,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3510,8 +3528,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8476,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3521,8 +3539,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8479,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3532,8 +3550,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8484,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3543,8 +3561,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8476,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3554,8 +3572,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8476,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3565,8 +3583,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8475,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3576,8 +3594,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8479,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3587,8 +3605,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8481,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3598,8 +3616,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8473,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3609,8 +3627,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8482,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3620,8 +3638,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8483,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3631,8 +3649,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8487,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3642,8 +3660,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8472,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3653,8 +3671,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8398,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3664,8 +3682,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8436,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3675,8 +3693,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8448,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3686,8 +3704,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8445,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3697,8 +3715,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8451,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3708,8 +3726,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8464,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3719,8 +3737,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 7.8457,
           "instrument_id": "usd_hkd",
           "currency": "HKD",
-          "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "daily reference exchange rate; not live spot",
           "source_note": null,
           "includes_dividends": null
@@ -3728,15 +3746,15 @@ html,body,#root,.dashboard-root{background:#020304!important}
       ],
       "source": {
         "label": "USD → HKD 歷史資料",
-        "executedAt": "2026-10-30T19:55:24Z",
+        "executedAt": "2026-11-01T01:58:51Z",
         "notes": [
           "daily reference exchange rate; not live spot",
-          "真實觀測，未補週末與假日。"
+          "真實日期與觀測值，未補週末或缺值。"
         ],
         "evidenceFlow": [
           {
             "title": "公開來源",
-            "detail": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD"
+            "detail": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD"
           }
         ]
       }
@@ -3744,23 +3762,12 @@ html,body,#root,.dashboard-root{background:#020304!important}
     "history_usd_mop": {
       "rows": [
         {
-          "date": "2026-09-30",
-          "value": 8.0813,
-          "instrument_id": "usd_mop",
-          "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
-          "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
-          "source_note": null,
-          "includes_dividends": null
-        },
-        {
           "date": "2026-10-02",
           "value": 8.0816,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3770,8 +3777,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0819,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3781,8 +3788,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0829,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3792,8 +3799,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0834,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3803,8 +3810,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0824,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3814,8 +3821,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.083,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3825,8 +3832,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0837,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3836,8 +3843,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0833,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3847,8 +3854,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0836,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3858,8 +3865,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0827,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3869,8 +3876,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0829,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3880,8 +3887,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0833,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3891,8 +3898,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0832,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3902,8 +3909,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0812,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3913,8 +3920,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0747,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3924,8 +3931,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.078,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3935,8 +3942,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0797,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3946,8 +3953,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0781,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3957,8 +3964,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0801,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3968,8 +3975,8 @@ html,body,#root,.dashboard-root{background:#020304!important}
           "value": 8.0798,
           "instrument_id": "usd_mop",
           "currency": "MOP",
-          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
-          "fetch_timestamp": "2026-10-30T19:55:24Z",
+          "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
+          "fetch_timestamp": "2026-11-01T01:58:51Z",
           "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
           "source_note": null,
           "includes_dividends": null
@@ -3977,15 +3984,15 @@ html,body,#root,.dashboard-root{background:#020304!important}
       ],
       "source": {
         "label": "USD → MOP 歷史資料",
-        "executedAt": "2026-10-30T19:55:24Z",
+        "executedAt": "2026-11-01T01:58:51Z",
         "notes": [
           "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
-          "真實觀測，未補週末與假日。"
+          "真實日期與觀測值，未補週末或缺值。"
         ],
         "evidenceFlow": [
           {
             "title": "公開來源",
-            "detail": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM"
+            "detail": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM"
           }
         ]
       }
@@ -4249,14 +4256,14 @@ html,body,#root,.dashboard-root{background:#020304!important}
       "unit": "USD / BTC",
       "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
       "source": "CoinGecko",
-      "fetched_at": "2026-10-30T19:55:24Z",
-      "as_of": "2026-10-30T19:54:12Z",
-      "period": "30 days; 30 daily UTC samples plus latest intraday sample",
+      "fetched_at": "2026-11-01T01:58:51Z",
+      "as_of": "2026-11-01T01:57:30Z",
+      "period": "Rolling 30-day window; published observations only",
       "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
-      "change_pct": -8.236478965059192,
+      "change_pct": -8.17627706857531,
       "change_period": "first-to-last chart sample",
-      "period_start": "2026-10-01T00:00:00Z",
-      "period_end": "2026-10-30T19:52:30Z",
+      "period_start": "2026-10-03T00:00:00Z",
+      "period_end": "2026-11-01T01:57:30Z",
       "reason": ""
     },
     "bnb": {
@@ -4266,14 +4273,14 @@ html,body,#root,.dashboard-root{background:#020304!important}
       "unit": "USD / BNB",
       "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily",
       "source": "CoinGecko",
-      "fetched_at": "2026-10-30T19:55:24Z",
-      "as_of": "2026-10-30T19:54:24Z",
-      "period": "30 days; 30 daily UTC samples plus latest intraday sample",
+      "fetched_at": "2026-11-01T01:58:51Z",
+      "as_of": "2026-11-01T01:57:30Z",
+      "period": "Rolling 30-day window; published observations only",
       "price_type": "aggregated spot USD price; daily UTC samples, not exchange closing prices",
-      "change_pct": -9.023017026797541,
+      "change_pct": -8.519668754909926,
       "change_period": "first-to-last chart sample",
-      "period_start": "2026-10-01T00:00:00Z",
-      "period_end": "2026-10-30T19:53:00Z",
+      "period_start": "2026-10-03T00:00:00Z",
+      "period_end": "2026-11-01T01:57:30Z",
       "reason": ""
     },
     "usd_hkd": {
@@ -4281,15 +4288,15 @@ html,body,#root,.dashboard-root{background:#020304!important}
       "label": "美元 / 港幣",
       "currency": "HKD",
       "unit": "HKD / USD",
-      "source_url": "https://api.frankfurter.dev/v1/2026-09-30..2026-10-30?base=USD&symbols=HKD",
+      "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD",
       "source": "Frankfurter v1",
-      "fetched_at": "2026-10-30T19:55:24Z",
+      "fetched_at": "2026-11-01T01:58:51Z",
       "as_of": "2026-10-30",
-      "period": "1 month; published working-day reference rates",
+      "period": "Rolling 30-day window; published observations only",
       "price_type": "daily reference exchange rate; not live spot",
-      "change_pct": -0.007646916380976698,
+      "change_pct": -0.017840985841910406,
       "change_period": "first-to-last chart sample",
-      "period_start": "2026-09-30",
+      "period_start": "2026-10-02",
       "period_end": "2026-10-30",
       "reason": ""
     },
@@ -4298,17 +4305,17 @@ html,body,#root,.dashboard-root{background:#020304!important}
       "label": "美元 / 澳門元",
       "currency": "MOP",
       "unit": "MOP / USD",
-      "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-09-30&to=2026-10-30&providers=AMCM",
+      "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM",
       "source": "Frankfurter / AMCM (Monetary Authority of Macao)",
-      "fetched_at": "2026-10-30T19:55:24Z",
+      "fetched_at": "2026-11-01T01:58:51Z",
       "as_of": "2026-10-30",
-      "period": "1 month; 21 published-date observations; no filled weekends/holidays",
+      "period": "Rolling 30-day window; published observations only",
       "price_type": "AMCM interbank middle rate, daily; not live spot or synthetic HKD peg",
-      "change_pct": -0.018561370076597417,
+      "change_pct": -0.022272817263901956,
       "change_period": "first-to-last chart sample",
       "primary_source_url": "https://www.amcm.gov.mo/en/financial-information/interbank-midpoint",
       "provider_metadata_url": "https://api.frankfurter.dev/v2/providers",
-      "period_start": "2026-09-30",
+      "period_start": "2026-10-02",
       "period_end": "2026-10-30",
       "reason": ""
     },
@@ -4347,6 +4354,48 @@ html,body,#root,.dashboard-root{background:#020304!important}
       "period_start": null,
       "period_end": null,
       "reason": "當期油價及歷史未核實"
+    }
+  },
+  "refresh": {
+    "mode": "validated-build",
+    "attempted_at": "2026-11-01T01:58:50Z",
+    "sources": {
+      "crypto_quotes": {
+        "status": "success",
+        "last_attempt_at": "2026-11-01T01:58:50Z",
+        "last_success_at": "2026-11-01T01:58:50Z",
+        "source_url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,binancecoin&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true"
+      },
+      "history_btc": {
+        "status": "success",
+        "last_attempt_at": "2026-11-01T01:58:50Z",
+        "last_success_at": "2026-11-01T01:58:51Z",
+        "source_url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily"
+      },
+      "history_bnb": {
+        "status": "success",
+        "last_attempt_at": "2026-11-01T01:58:51Z",
+        "last_success_at": "2026-11-01T01:58:51Z",
+        "source_url": "https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=30&interval=daily"
+      },
+      "history_usd_hkd": {
+        "status": "success",
+        "last_attempt_at": "2026-11-01T01:58:51Z",
+        "last_success_at": "2026-11-01T01:58:51Z",
+        "source_url": "https://api.frankfurter.dev/v1/2026-10-02..?base=USD&symbols=HKD"
+      },
+      "history_usd_mop": {
+        "status": "success",
+        "last_attempt_at": "2026-11-01T01:58:51Z",
+        "last_success_at": "2026-11-01T01:58:51Z",
+        "source_url": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=MOP&from=2026-10-02&providers=AMCM"
+      },
+      "weather": {
+        "status": "success",
+        "last_attempt_at": "2026-11-01T01:58:51Z",
+        "last_success_at": "2026-11-01T01:58:52Z",
+        "source_url": "https://xml.smg.gov.mo/c_actual_brief.xml"
+      }
     }
   }
 }</script>
@@ -4388,6 +4437,40 @@ var dataApp = require('@openai/data-app');
 const fmt=(d,options)=>new Intl.DateTimeFormat('zh-Hant-MO',{timeZone:'Asia/Macau',...options}).format(d);
 const daykey=d=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Macau',year:'numeric',month:'2-digit',day:'2-digit'}).format(d);
 const age=(t,now)=>{if(!t?.includes('T'))return '';const mins=Math.max(0,Math.floor((now-new Date(t))/60000));return mins<60?mins+' 分鐘前':mins<1440?Math.floor(mins/60)+' 小時前':Math.floor(mins/1440)+' 日前';};
+/* Authored status logic only. This never changes the protected Data runtime. */
+function dataFreshness(row, now, sources) {
+  if (row.value == null) return row.status === 'delisted' ? '已除牌' : '未核實';
+  const state = sources?.[row.refresh_key];
+  const stamp = row.quote_timestamp;
+  const observed = typeof stamp === 'string' ? Date.parse(stamp.length === 10 ? stamp + 'T00:00:00Z' : stamp) : NaN;
+  const stale = row.status === 'stale' || (row.stale_after_seconds && (!Number.isFinite(observed) || now - observed > row.stale_after_seconds * 1000));
+  if (state?.status === 'error') return '更新失敗' + (stale ? ' · 已過期' : ' · 保留舊值');
+  if (stale) return '已過期';
+  return row.refresh_key ? '已核實快照' : '人工快照';
+}
+
+function weatherDetail(rows, today) {
+  const forecast = rows.find(row => row.valid_date === today);
+  if (!forecast) return '今日預報未更新';
+  const {low, high} = forecast.value || {};
+  return Number.isFinite(low) && Number.isFinite(high) ? forecast.valid_date + ' 預報 ' + low + '–' + high + '°C' : forecast.valid_date + ' 預報溫度未核實';
+}
+
+async function checkPublishedData({fetcher, url, currentDigest, currentGeneratedAt}) {
+  const response = await fetcher(url, {cache: 'no-store', credentials: 'omit'});
+  if (!response.ok) {
+    const error = new Error('published_data_unavailable');
+    error.stop = [401, 403, 451].includes(response.status);
+    throw error;
+  }
+  const manifest = await response.json();
+  if (manifest.schema !== 1 || !/^[a-f0-9]{64}$/.test(manifest.snapshot_sha256) || !Number.isFinite(Date.parse(manifest.generated_at))) {
+    throw new Error('invalid_published_manifest');
+  }
+  // CDN edges can briefly serve an older manifest. Never reload backwards.
+  return manifest.snapshot_sha256 === currentDigest || Date.parse(manifest.generated_at) <= Date.parse(currentGeneratedAt) ? 'current' : 'available';
+}
+
 function DashboardContent(){
  const {queries,snapshot}=dataApp.useDataApp();
  const refreshed={marketRows:queries.market?.rows||[],historyRowsById:Object.fromEntries(Object.keys(snapshot.histories||{}).map(id=>[id,queries['history_'+id]?.rows||[]])),historyMeta:snapshot.histories||{}};
@@ -4396,6 +4479,12 @@ function DashboardContent(){
  react.useEffect(()=>{const t=setInterval(()=>setNow(new Date()),1000);return()=>clearInterval(t)},[]);
  react.useEffect(()=>{const media=matchMedia('(prefers-reduced-motion: reduce)');const apply=()=>setPaused(media.matches);apply();media.addEventListener('change',apply);return()=>media.removeEventListener('change',apply)},[]);
  react.useEffect(()=>{const resize=()=>setPlotHeight(Math.max(24,Math.min(90,Math.round(innerHeight*.03))));addEventListener('resize',resize);return()=>removeEventListener('resize',resize)},[]);
+ const [published,setPublished]=react.useState('idle'),checkRef=react.useRef(null);
+ react.useEffect(()=>{let disposed=false,failures=0,timer,stopped=false;
+  const check=async()=>{if(disposed||stopped)return;if(document.hidden){timer=setTimeout(check,300000);return}setPublished('checking');try{const result=await checkPublishedData({fetcher:fetch,url:new URL('data-version.json',document.baseURI),currentDigest:document.querySelector('meta[name="data-app-snapshot-sha256"]').content,currentGeneratedAt:snapshot.generatedAt});if(disposed)return;failures=0;setPublished(result);}catch(error){if(disposed)return;failures++;stopped=Boolean(error.stop);setPublished(stopped?'blocked':'error')}if(!disposed&&!stopped)timer=setTimeout(check,[300000,900000,1800000,3600000][Math.min(failures,3)])};
+  checkRef.current=()=>{if(stopped)return;clearTimeout(timer);check()};timer=setTimeout(check,1000);return()=>{disposed=true;clearTimeout(timer);checkRef.current=null};
+ },[]);
+ const sourceStates=snapshot.refresh?.sources||{};
  const today=daykey(now),[yy,mm]=today.split('-').map(Number),month=new Date(Date.UTC(yy,mm-1+offset,1)),y=month.getUTCFullYear(),m=month.getUTCMonth();
  const weather=rows('weather')[0],news=rows('news'),dates=Array.from({length:42},(_,i)=>new Date(Date.UTC(y,m,1-month.getUTCDay()+i)));
  const h=jsxRuntime.jsx,hs=jsxRuntime.jsxs;
@@ -4404,20 +4493,19 @@ function DashboardContent(){
   const q='history_'+r.id,series=rows(q),valid=series.filter(p=>Number.isFinite(p.value)),meta=refreshed.historyMeta?.[r.id]||{};
   if(valid.length<3)return h('div',{className:'nd-trend-unavailable',children:r.status==='delisted'?'已除牌 · 無現時行情':meta.reason||'歷史資料不足'});
   const first=valid[0],last=valid[valid.length-1],change=first.value!==0?(last.value/first.value-1)*100:null;
-  return hs('div',{className:'nd-trend-wrap',children:[h(dataApp.EvidenceChart,{id:'trend-'+r.id,queryId:q,title:r.label+' · '+(meta.currency||r.currency||r.unit),spec:{type:'line',x:'date',y:'value',showCategoryTicks:false,showXAxisLabel:false,showYAxisLabel:false,showLegend:false,startAtZero:false,colors:{value:'#59635d'},valueDecimals:4},rows:series,sourceRows:series,height:plotHeight,showHeading:false,showActions:false,variant:'plain',className:'nd-trend'}),hs('small',{className:'nd-trend-period',children:[(meta.period_start||first.date).slice(0,10)+'–'+(meta.period_end||last.date).slice(0,10),' · ',meta.currency||r.currency||r.unit,change==null?'':' · '+(change>=0?'+':'')+change.toFixed(2)+'%',meta.includes_dividends===false?' · 不含股息':'']})]});
+  return hs('div',{className:'nd-trend-wrap',children:[h(dataApp.EvidenceChart,{id:'trend-'+r.id,queryId:q,title:r.label+' · '+(meta.currency||r.currency||r.unit),spec:{type:'line',x:'date',y:'value',showCategoryTicks:false,showXAxisLabel:false,showYAxisLabel:false,showLegend:false,startAtZero:false,colors:{value:'#59635d'},valueDecimals:4},rows:series,sourceRows:series,height:plotHeight,showHeading:false,showActions:false,variant:'plain',className:'nd-trend'}),hs('small',{className:'nd-trend-period',children:[(meta.period_start||first.date).slice(0,10)+'–'+(meta.period_end||last.date).slice(0,10),' · ',meta.currency||r.currency||r.unit,change==null?'':' · '+(change>=0?'+':'')+change.toFixed(2)+'%',meta.includes_dividends===false?' · 不含股息':'',sourceStates[q]?.status==='error'?' · 更新失敗':'']})]});
  };
- const quote=r=>hs('article',{className:'nd-price-tile',children:[hs('div',{className:'nd-price-head',children:[h('span',{children:r.label}),r.symbol&&h('small',{children:r.symbol})]}),hs('strong',{className:'nd-price',children:[r.value==null?'—':r.display||new Intl.NumberFormat('en-US',{maximumFractionDigits:4}).format(r.value),h('small',{children:r.unit})]}),h('small',{className:'nd-price-detail',children:r.detail||r.asof||'報價待核實'}),trend(r)]},r.id);
+ const quote=r=>hs('article',{className:'nd-price-tile',children:[hs('div',{className:'nd-price-head',children:[h('span',{children:r.label}),r.symbol&&h('small',{children:r.symbol})]}),hs('strong',{className:'nd-price',children:[r.value==null?'—':r.display||new Intl.NumberFormat('en-US',{maximumFractionDigits:4}).format(r.value),h('small',{children:r.unit})]}),h('small',{className:'nd-price-detail',title:(r.detail||r.asof||'報價待核實')+' · 資料：'+(r.quote_timestamp||r.source_quote_time||'未明')+' · 成功擷取：'+(r.fetch_timestamp||'未明'),children:dataFreshness(r,now,sourceStates)+' · '+(r.detail||r.asof||'報價待核實')}),trend(r)]},r.id);
  function navigateKeys(e){if(e.target.tagName==='INPUT'||!['ArrowRight','ArrowLeft','ArrowDown','ArrowUp'].includes(e.key))return;const els=[...e.currentTarget.querySelectorAll('button,a')].filter(v=>v.tabIndex>=0);const i=els.indexOf(document.activeElement);if(i<0)return;e.preventDefault();els[(i+(['ArrowRight','ArrowDown'].includes(e.key)?1:els.length-1))%els.length]?.focus();}
 
  const calendar=card('calendar-month','月曆','calendar',hs(jsxRuntime.Fragment,{children:[hs('div',{className:'nd-month-head',children:[h('button',{'aria-label':'上一個月',onClick:()=>setOffset(v=>v-1),children:'‹'}),h('b',{children:y+'年 '+(m+1)+'月'}),h('button',{'aria-label':'下一個月',onClick:()=>setOffset(v=>v+1),children:'›'}),h('button',{className:'nd-today',onClick:()=>setOffset(0),children:'今天'})]}),hs('div',{className:'nd-days',children:['日一二三四五六'.split('').map(v=>h('span',{className:'nd-weekday',children:v},v)),dates.map(d=>h('span',{className:(d.getUTCMonth()!==m?'nd-dim ':'')+(d.toISOString().slice(0,10)===today?'nd-current':''),children:d.getUTCDate()},d.toISOString()))]})]}),'nd-calendar-panel');
  return hs('div',{className:'night-desk sleep-desk','data-dashboard-layout':'viewport',onKeyDown:navigateKeys,style:{filter:'brightness('+(brightness/100)+')'},children:[
-  hs('div',{className:'nd-top',children:[hs('div',{className:'nd-time-panel',children:[h('div',{className:'nd-location',children:'澳門 · 睡眠看板'}),hs('div',{className:'nd-clock',children:[fmt(now,{hour:'2-digit',minute:'2-digit',hour12:false}),h('span',{children:fmt(now,{second:'2-digit'}).padStart(2,'0')})]}),h('div',{className:'nd-date',children:fmt(now,{year:'numeric',month:'long',day:'numeric',weekday:'long'})})]}),card('weather','澳門天氣','weather',hs(jsxRuntime.Fragment,{children:[hs('strong',{className:'nd-weather',children:[weather?.value??'—',h('small',{children:weather?.unit||''})]}),h('p',{children:weather?.detail||'天氣資料待核實'}),h('small',{children:(weather?.asof||'待核實')+' · '+age(weather?.quote_timestamp,now)})]}),'nd-weather-panel'),calendar,hs('div',{className:'nd-sleep-controls',children:[hs('label',{htmlFor:'sleep-brightness',children:['睡眠亮度 ',h('output',{children:brightness+'%'})]}),h('input',{id:'sleep-brightness',type:'range',min:20,max:85,step:5,value:brightness,'aria-label':'睡眠亮度',onChange:e=>setBrightness(Number(e.target.value))}),hs('div',{className:'nd-brightness-presets',children:[h('button',{onClick:()=>setBrightness(35),children:'更暗'}),h('button',{onClick:()=>setBrightness(55),children:'睡眠'}),h('button',{onClick:()=>setBrightness(85),children:'閱讀'})]}),h('small',{children:'頁面亮度 · 不改電視設定'})]})]}),
+  hs('div',{className:'nd-top',children:[hs('div',{className:'nd-time-panel',children:[h('div',{className:'nd-location',children:'澳門 · 睡眠看板'}),hs('div',{className:'nd-clock',children:[fmt(now,{hour:'2-digit',minute:'2-digit',hour12:false}),h('span',{children:fmt(now,{second:'2-digit'}).padStart(2,'0')})]}),h('div',{className:'nd-date',children:fmt(now,{year:'numeric',month:'long',day:'numeric',weekday:'long'})})]}),card('weather','澳門天氣','weather',hs(jsxRuntime.Fragment,{children:[hs('strong',{className:'nd-weather',children:[weather?.value??'—',h('small',{children:weather?.unit||''})]}),h('p',{children:weatherDetail(rows('weather'),today)}),h('small',{children:(weather?.asof||'待核實')+' · '+dataFreshness(weather||{},now,sourceStates)+' · '+age(weather?.quote_timestamp,now)})]}),'nd-weather-panel'),calendar,hs('div',{className:'nd-sleep-controls',children:[hs('label',{htmlFor:'sleep-brightness',children:['睡眠亮度 ',h('output',{children:brightness+'%'})]}),h('input',{id:'sleep-brightness',type:'range',min:20,max:85,step:5,value:brightness,'aria-label':'睡眠亮度',onChange:e=>setBrightness(Number(e.target.value))}),hs('div',{className:'nd-brightness-presets',children:[h('button',{onClick:()=>setBrightness(35),children:'更暗'}),h('button',{onClick:()=>setBrightness(55),children:'睡眠'}),h('button',{onClick:()=>setBrightness(85),children:'閱讀'})]}),h('small',{children:'頁面亮度 · 不改電視設定'})]})]}),
   hs('div',{className:'nd-body',children:[card('market-overview','市場','market',h('div',{className:'nd-price-grid nd-market-grid',children:rows('market').map(quote)}),'nd-market-panel'),card('watchlist','股票與基金','watchlist',h('div',{className:'nd-price-grid nd-stock-grid',children:rows('watchlist').map(quote)}),'nd-watch-panel')]}),
   card('rolling-news','中文新聞','news',hs('div',{className:'nd-ticker',children:[h('button',{onClick:()=>setPaused(v=>!v),'aria-label':paused?'播放新聞跑馬燈':'暫停新聞跑馬燈',children:paused?'播放':'暫停'}),h('div',{className:'nd-ticker-window',tabIndex:0,'aria-label':'新聞標題，可左右捲動',children:h('div',{className:'nd-ticker-track '+(paused?'nd-paused':''),children:news.length?[...news,...news].map((n,i)=>hs('span',{'aria-hidden':i>=news.length?true:undefined,children:[h('a',{href:n.url,target:'_blank',rel:'noreferrer',tabIndex:i>=news.length?-1:undefined,children:n.title}),h('small',{children:n.source+' · '+n.date}),n.context&&h('p',{children:n.context})]},n.id+'-'+i)):h('span',{children:'新聞資料待核實'})})})]}),'nd-news-panel'),
-  hs('div',{className:'nd-footer',children:[hs('span',{children:[h('span',{children:'報價與走勢為快照 · 圖形各自縮放'}),h('span',{className:'nd-refresh-status',children:'重新載入不會更新資料 · 完整資料時間及來源見 ⋯'})]}),h('span',{children:'整理：'+fmt(new Date(snapshot.generatedAt),{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false})})]})
+  hs('div',{className:'nd-footer',children:[hs('span',{children:[h('span',{children:'逐來源資料時間見 ⋯ · 圖形各自縮放 · 無自動行情排程'}),hs('span',{className:'nd-refresh-status',children:[h('button',{onClick:()=>published==='available'?location.reload():checkRef.current?.(),disabled:published==='checking'||published==='blocked',children:published==='checking'?'檢查中':published==='error'?'檢查失敗 · 重試':published==='blocked'?'檢查被拒絕':published==='current'?'已是發布版本 · 再檢查':published==='available'?'有發布更新 · 載入':'檢查已發布更新'}),' · 開頁每5分鐘檢查發布版本，非即時報價']})]}),h('span',{children:'整理：'+fmt(new Date(snapshot.generatedAt),{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false})})]})
  ]});
 }
-
 
 // The canonical App imports both entrypoints. This dashboard-only project has
 // no authored report; retain the export without bundling the gallery narrative.
